@@ -1,0 +1,17 @@
+# Day 2 lab: answer only for names we own
+
+# Port 80: close the connection, send nothing
+server {
+    listen 127.0.0.1:80 default_server;
+    listen [::1]:80 default_server;
+    server_name _;
+    return 444;
+}
+
+# Port 443: refuse the TLS handshake for unknown or missing SNI
+server {
+    listen 127.0.0.1:443 ssl default_server;
+    listen [::1]:443 ssl default_server;
+    server_name _;
+    ssl_reject_handshake on;
+}

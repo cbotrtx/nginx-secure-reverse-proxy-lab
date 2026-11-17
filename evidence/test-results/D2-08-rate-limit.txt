@@ -1,0 +1,8 @@
+== flood: 60 requests, 10 parallel ==
+     22 200
+     38 429
+== after 3s cool-down (expect 200) ==
+200
+== NGINX logged it ==
+38
+2026/11/17 14:30:50 [error] 472982#472982: *117 limiting requests, excess: 20.850 by zone "lab_req", client: 127.0.0.1, server: app1.lab.test, request: "GET / HTTP/2.0", host: "app1.lab.test"

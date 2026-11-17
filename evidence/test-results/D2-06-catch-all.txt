@@ -1,0 +1,11 @@
+== unknown Host on 80 (expect 000) ==
+000
+== bare IP on 80 (expect 000) ==
+000
+== unknown SNI on 443 (expect alert) ==
+4027B164E0770000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../ssl/record/rec_layer_s3.c:918:SSL alert number 112
+== no SNI on 443 (expect alert) ==
+40372D99AA7D0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../ssl/record/rec_layer_s3.c:918:SSL alert number 112
+== real sites still work (expect 200 200) ==
+200
+200

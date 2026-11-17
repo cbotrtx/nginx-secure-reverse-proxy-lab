@@ -1,0 +1,14 @@
+== versions ==
+nginx version: nginx/1.28.3 (Ubuntu)
+OpenSSL 3.5.5 27 Jan 2026 (Library: OpenSSL 3.5.5 27 Jan 2026)
+Python 3.14.4
+== config test ==
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+== listeners ==
+LISTEN 0      511        127.0.0.1:80         0.0.0.0:*    users:(("nginx",pid=3266,fd=5),("nginx",pid=3264,fd=5),("nginx",pid=3263,fd=5),("nginx",pid=3262,fd=5),("nginx",pid=3261,fd=5),("nginx",pid=3260,fd=5),("nginx",pid=3259,fd=5),("nginx",pid=3258,fd=5),("nginx",pid=3257,fd=5),("nginx",pid=3256,fd=5),("nginx",pid=3254,fd=5),("nginx",pid=3251,fd=5),("nginx",pid=3250,fd=5),("nginx",pid=3249,fd=5),("nginx",pid=3248,fd=5),("nginx",pid=3247,fd=5),("nginx",pid=3246,fd=5))
+LISTEN 0      511            [::1]:80            [::]:*    users:(("nginx",pid=3266,fd=6),("nginx",pid=3264,fd=6),("nginx",pid=3263,fd=6),("nginx",pid=3262,fd=6),("nginx",pid=3261,fd=6),("nginx",pid=3260,fd=6),("nginx",pid=3259,fd=6),("nginx",pid=3258,fd=6),("nginx",pid=3257,fd=6),("nginx",pid=3256,fd=6),("nginx",pid=3254,fd=6),("nginx",pid=3251,fd=6),("nginx",pid=3250,fd=6),("nginx",pid=3249,fd=6),("nginx",pid=3248,fd=6),("nginx",pid=3247,fd=6),("nginx",pid=3246,fd=6))
+== enabled sites ==
+lrwxrwxrwx root root 34 B Sun Nov 15 21:04:26 2026 default ⇒ /etc/nginx/sites-available/default
+== lab hosts ==
+none yet

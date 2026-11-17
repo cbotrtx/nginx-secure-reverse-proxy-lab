@@ -1,0 +1,12 @@
+== 1. no password (expect 401) ==
+401
+== 2. wrong password (expect 401) ==
+401
+== 3. right password (expect 200) ==
+Enter host password for user 'labadmin':
+200
+== 4. right password, untrusted IP 127.0.0.2 (expect 403) ==
+Enter host password for user 'labadmin':
+403
+== 5. public page still open (expect 200) ==
+200

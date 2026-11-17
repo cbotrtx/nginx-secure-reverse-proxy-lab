@@ -1,0 +1,23 @@
+== app1 direct ==
+{
+  "app": "app1",
+  "path": "/",
+  "connection_from": "127.0.0.1",
+  "host": "127.0.0.1:8081",
+  "x_real_ip": null,
+  "x_forwarded_for": null,
+  "x_forwarded_proto": null
+}
+== app2 direct ==
+{
+  "app": "app2",
+  "path": "/test",
+  "connection_from": "127.0.0.1",
+  "host": "127.0.0.1:8082",
+  "x_real_ip": null,
+  "x_forwarded_for": null,
+  "x_forwarded_proto": null
+}
+== listeners ==
+LISTEN 0      5          127.0.0.1:8082       0.0.0.0:*    users:(("python3",pid=302482,fd=3))                                                                                                                                                                                                                                                                                                                                                                                            
+LISTEN 0      5          127.0.0.1:8081       0.0.0.0:*    users:(("python3",pid=302481,fd=3))                                                                                                                                                                                                                                                                                                                                                                                            

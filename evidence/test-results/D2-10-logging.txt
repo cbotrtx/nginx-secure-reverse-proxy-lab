@@ -1,0 +1,10 @@
+== generating: 200, 404 path, 401, 403 ==
+200
+200
+401
+403
+== last 4 log lines ==
+127.0.0.1 user=- [2026-11-17T14:43:40+05:30] host=app1.lab.test "GET / HTTP/2.0" status=200 bytes=190 rt=0.001 up=127.0.0.1:8081 up_status=200 up_rt=0.001 tls=TLSv1.3/TLS_AES_256_GCM_SHA384 "curl/8.18.0"
+127.0.0.1 user=- [2026-11-17T14:43:40+05:30] host=app1.lab.test "GET /wp-login.php HTTP/2.0" status=200 bytes=202 rt=0.001 up=127.0.0.1:8081 up_status=200 up_rt=0.001 tls=TLSv1.3/TLS_AES_256_GCM_SHA384 "curl/8.18.0"
+127.0.0.1 user=- [2026-11-17T14:43:40+05:30] host=app2.lab.test "GET /admin/ HTTP/2.0" status=401 bytes=172 rt=0.000 up=- up_status=- up_rt=- tls=TLSv1.3/TLS_AES_256_GCM_SHA384 "curl/8.18.0"
+127.0.0.2 user=- [2026-11-17T14:43:40+05:30] host=app2.lab.test "GET /admin/ HTTP/2.0" status=403 bytes=146 rt=0.000 up=- up_status=- up_rt=- tls=TLSv1.3/TLS_AES_256_GCM_SHA384 "curl/8.18.0"

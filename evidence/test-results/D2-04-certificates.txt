@@ -1,0 +1,14 @@
+== chain check ==
+~/lab-ca/lab.test.crt: OK
+== server cert ==
+subject=CN=app1.lab.test
+issuer=CN=Security Lab Root CA
+notBefore=Nov 17 08:19:51 2026 GMT
+notAfter=Dec 19 08:19:51 2027 GMT
+X509v3 Extended Key Usage: 
+    TLS Web Server Authentication
+X509v3 Subject Alternative Name: 
+    DNS:app1.lab.test, DNS:app2.lab.test
+== key type ==
+            Public Key Algorithm: id-ecPublicKey
+                NIST CURVE: P-256

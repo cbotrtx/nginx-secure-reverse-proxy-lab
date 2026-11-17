@@ -1,0 +1,10 @@
+# Private keys and certificate requests - never publish
+*.key
+*.csr
+*.srl
+# Password files for basic auth
+*htpasswd*
+# Backups and editor junk
+*.bak
+*.tar.gz
+*~

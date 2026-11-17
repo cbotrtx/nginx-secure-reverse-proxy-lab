@@ -1,0 +1,22 @@
+== app1 via proxy ==
+{
+  "app": "app1",
+  "path": "/",
+  "connection_from": "127.0.0.1",
+  "host": "app1.lab.test",
+  "x_real_ip": "127.0.0.1",
+  "x_forwarded_for": "127.0.0.1",
+  "x_forwarded_proto": "http"
+}
+== app2 via proxy ==
+{
+  "app": "app2",
+  "path": "/hello",
+  "connection_from": "127.0.0.1",
+  "host": "app2.lab.test",
+  "x_real_ip": "127.0.0.1",
+  "x_forwarded_for": "127.0.0.1",
+  "x_forwarded_proto": "http"
+}
+== unknown host ==
+200
